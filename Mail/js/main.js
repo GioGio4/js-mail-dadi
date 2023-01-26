@@ -5,6 +5,7 @@
 
 
 // 1- Ho bisogno di una lista che contenga le mail degli utenti
+
 const mail_list = [
     "mail1",
     "mail2",
@@ -15,8 +16,9 @@ const mail_list = [
 // console.log("lista email=" + mail_list);
 
 // 2- Devo creare un prompt per far inserire la mail all'utente che accede
-const user_mail = prompt("Inserisci Email per accedere");
 
+const user_mail = prompt("Inserisci Email per accedere");
+// console.log(user_mail);
 
 // 3- SE La mail coincide con una nella lista viasualizza messaggio "benvenuto"
 //   ALTRIMENTI visualizza messsaggio "accesso negato"
@@ -25,6 +27,8 @@ const user_mail = prompt("Inserisci Email per accedere");
 let welcome_msg = false
 
 for (let i = 0; i < mail_list.length; i++) {
+
+    const current_element = mail_list[i];
 
     if (user_mail == current_element) {
 
