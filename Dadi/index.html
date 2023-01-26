@@ -6,14 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esercizio Dadi</title>
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
-    <button type="button" id="generate-button">Lancia i dadi</button>
-    <p id="user-number"></p>
-    <p id="computer-number"></p>
-    <h2 id="result-msg"></h2>
+    <h1>IL GIOCO DEI DADI</h1>
+    <div class="container">
+        <div class="row">
+
+            <div class="col3">
+                <i class=" user-icon fa-solid fa-user-tie"></i>
+                <p id="user-number"></p>
+            </div>
+
+            <div class="col3">
+                <button type="button" id="generate-button">Lancia i dadi<i
+                        class="fa-sharp fa-solid fa-dice"></i></button>
+            </div>
+
+            <div class="col3">
+                <i class="user-icon fa-solid fa-user-secret"></i>
+                <p id="computer-number"></p>
+            </div>
+
+        </div>
+        <h2 id="result-msg"></h2>
+    </div>
+
+
+
+
 
     <script type="text/javascript" src="./js/main.js"></script>
 </body>
